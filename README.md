@@ -1,4 +1,4 @@
-#Handling Transit Data Process:
+# Handling Transit Data Process:
 
 1. Import Data as CSV file into SSMS.
 	-Manully:
