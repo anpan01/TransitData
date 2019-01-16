@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<BCPFORMAT xmlns="http://schemas.microsoft.com/sqlserver/2004/bulkload/format" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RECORD>
+		<FIELD ID="Record_ID" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="Vehicle_ID" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="Vehicle" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="Counter" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="Route_ID" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="Route" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="Route_Stop_ID" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="RouteStop" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="Latitude" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="Longitude" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="UTCTime" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="ClientTime" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="Entrys" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="Exits" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="DateTime" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="DayofWeek" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="TotalOnOff" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="DateTime2" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="MonthName" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="Date" TERMINATOR="," xsi:type="CharTerm"/>
+		<FIELD ID="Time2" TERMINATOR="\n" xsi:type="CharTerm"/>
+	</RECORD>
+	<ROW>
+		<COLUMN NAME="Vehicle_ID" SOURCE="Vehicle_ID" NULLABLE="YES" xsi:type="SQLTINYINT"/>
+		<COLUMN NAME="Vehicle" SOURCE="Vehicle" NULLABLE="YES" xsi:type="SQLVARYCHAR" LENGTH="10"/>
+		<COLUMN NAME="Counter" SOURCE="Counter" NULLABLE="YES" xsi:type="SQLVARYCHAR" LENGTH="25"/>
+		<COLUMN NAME="Route_ID" SOURCE="Route_ID" NULLABLE="YES" xsi:type="SQLTINYINT"/>
+		<COLUMN NAME="Route" SOURCE="Route" NULLABLE="YES" xsi:type="SQLVARYCHAR" LENGTH="10"/>
+		<COLUMN NAME="Route_Stop_ID" SOURCE="Route_Stop_ID" NULLABLE="YES" xsi:type="SQLVARYCHAR" LENGTH="10"/>
+		<COLUMN NAME="RouteStop" SOURCE="RouteStop" NULLABLE="YES" xsi:type="SQLVARYCHAR" LENGTH="50"/>
+		<COLUMN NAME="Latitude" SOURCE="Latitude" NULLABLE="YES" xsi:type="SQLDECIMAL" PRECISION="9" SCALE="6"/>
+		<COLUMN NAME="Longitude" SOURCE="Longitude" NULLABLE="YES" xsi:type="SQLDECIMAL" PRECISION="9" SCALE="6"/>
+		<COLUMN NAME="UTCTime" SOURCE="UTCTime" NULLABLE="YES" xsi:type="SQLDATETIME"/>
+		<COLUMN NAME="ClientTime" SOURCE="ClientTime" NULLABLE="YES" xsi:type="SQLDATETIME"/>
+		<COLUMN NAME="Entrys" SOURCE="Entrys" NULLABLE="YES" xsi:type="SQLTINYINT"/>
+		<COLUMN NAME="Exits" SOURCE="Exits" NULLABLE="YES" xsi:type="SQLTINYINT"/>
+		<COLUMN NAME="DateTime" SOURCE="DateTime" NULLABLE="YES" xsi:type="SQLDATETIME"/>
+		<COLUMN NAME="DayofWeek" SOURCE="DayofWeek" NULLABLE="YES" xsi:type="SQLVARYCHAR" LENGTH="3"/>
+		<COLUMN NAME="TotalOnOff" SOURCE="TotalOnOff" NULLABLE="YES" xsi:type="SQLTINYINT"/>
+		<COLUMN NAME="DateTime2" SOURCE="DateTime2" NULLABLE="YES" xsi:type="SQLDATETIME"/>
+		<COLUMN NAME="MonthName" SOURCE="MonthName" NULLABLE="YES" xsi:type="SQLVARYCHAR" LENGTH="3"/>
+		<COLUMN NAME="Date" SOURCE="Date" NULLABLE="YES" xsi:type="SQLDATETIME"/>
+		<COLUMN NAME="Time2" SOURCE="Time2" NULLABLE="YES" xsi:type="SQLINT"/>
+	</ROW>
+</BCPFORMAT>
